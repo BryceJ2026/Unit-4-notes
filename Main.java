@@ -61,7 +61,25 @@ public class Main {
 
 
 
+//*** LOOPS AND STRINGS***
+// WHILE loop -> find & replace characters
+String s = "Jackson dropped all of the chargers!";
+int i = 0; //loop counter
 
+while (s.indexOf("a") >=0){
+   i=s.indexOf("a");
+   //show character at that index
+   String letter = s. substring(i, i+1);
+   System.out.println("There is an " + letter + " at index" + i);
+   // get the firs part of the stirng
+   String firstPart = s.substring(0, i);
+   // get the last part of the string
+   String lastPart = s.substring(i+1,s.length() );
+   // replace character in s
+   s = firstPart +"@" + lastPart;
+}
+System.out.println("String after find & replace:" + s);
+   
 
 
 
@@ -95,5 +113,6 @@ guess = scan.nextInt(); //LOOP CHANGE
       System.out.println("YOU DID NOT DO IT >:(");
          // Print out something like "You got it!"
    
+
    }
 }
