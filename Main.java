@@ -64,7 +64,8 @@ public class Main {
 //*** LOOPS AND STRINGS***
 // WHILE loop -> find & replace characters
 String s = "Jackson dropped all of the chargers!";
-int i = 0; //loop counter
+int i = 0; //loop counter there, represents INDEX in String
+//test condition: while "a" is still in String a
 
 while (s.indexOf("a") >=0){
    i=s.indexOf("a");
@@ -75,11 +76,27 @@ while (s.indexOf("a") >=0){
    String firstPart = s.substring(0, i);
    // get the last part of the string
    String lastPart = s.substring(i+1,s.length() );
-   // replace character in s
+   // reassign the string to a new version of it, with "a" replaced
    s = firstPart +"@" + lastPart;
 }
 System.out.println("String after find & replace:" + s);
    
+//For loop --> reserve all characters of a String
+// Use a For loop when you want to visit every character
+int finalIndex = s.length() -1;
+for (int index = finalIndex; index >= 0; index-- ) {
+   //System.out.println("Current index: " + i);
+   //System.out.println("Letter at index:" + s.substring(index, index +1));
+
+//Build our reversed version at current index
+//Concatenate with the letter at current index
+
+
+reversedS = reversedS + s.substring(index, index++);
+}
+
+
+
 
 
 
