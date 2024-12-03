@@ -92,11 +92,22 @@ for (int index = finalIndex; index >= 0; index-- ) {
 //Concatenate with the letter at current index
 
 
-reversedS = reversedS + s.substring(index, index++);
+//reversedS = reversedS + s.substring(index, index++);
 }
 
 
 
+
+//NESTED LOOPS
+// Outer loop(runs 3 time)
+for (int row = 1; row <= 10; row++){
+   //Inner loop runs 5 times for each outer loop
+   for (int col = 1; col <= 8; col++){
+      System.out.print(" WITH THIS SACRED TREASURE I SUMMON");
+   }
+   // after cols are printed, next line
+   System.out.println();
+}
 
 
 
